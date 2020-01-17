@@ -1,7 +1,7 @@
 Прикладом може бути клас, який може мати тільки один екземпляр, до якого є певна точка доступу і який має певні публічні методи. 
 
 const counterModule = (function () {
-  const instance;
+  let instance;
   let counter = 0;
 
   const getCounter = function () {
