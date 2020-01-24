@@ -1,4 +1,4 @@
-Адаптер робить один інтерфейс, початково несумісний, сумісним з іншим, при цьому не змінюючи його початковий код. Інша назва цього паттерну: Wrapper Pattern.
+// Адаптер робить один інтерфейс, початково несумісний, сумісним з іншим, при цьому не змінюючи його початковий код. Інша назва цього паттерну: Wrapper Pattern.
 
 class Raccoon {
   run(){}
@@ -12,13 +12,13 @@ class Hunter {
     }
 }
 
-Raccoon and Hunter are compatible, while Dog is incompatible with Hunter:
+// Raccoon and Hunter are compatible, while Dog is incompatible with Hunter:
 
 class Dog {
     bark() {}
 }
 
-Adapter example:
+// Adapter example:
 
 class DogAdapter {
     constructor(dog) {

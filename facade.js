@@ -1,6 +1,4 @@
-Цей патерн використовується у ситуаціях, коли потрібно створити простий інтерфейс для частини складного коду, щоб приховати його складність.
-
-Example:
+// Цей патерн використовується у ситуаціях, коли потрібно створити простий інтерфейс для частини складного коду, щоб приховати його складність.
 
 class CreditHistory {
   check (name) {
@@ -14,14 +12,16 @@ class TradeIn {
   // Getting the vehicle parameters (year, mileage etc) and counting the price
   return price;
  }
+}
  
- class Fees {
+class Fees {
   getFeesSum(state) {
   //getting all fees for the selected state and summing them
   return fees;
- }
+  }
+}
  
- class Purchase {
+class Purchase {
   constructor (name, state) {
     this.name = name,
     this.state = state
@@ -41,6 +41,6 @@ class TradeIn {
   }
  }
  
- Usage:
+//  Usage:
  const newPurchase = new Purchase('John Doe', 'Arizona');
  const carPurchase = newPurchase.applyFor('Mercedez Bens 1999');

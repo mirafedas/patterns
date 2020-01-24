@@ -1,6 +1,5 @@
-Observer "підписаний" на події, які відбуваються у різних місцях, і коли певна подія відбувається, він може розіслати повідомлення про це певним (або всім) модулям.
+// Observer "підписаний" на події, які відбуваються у різних місцях, і коли певна подія відбувається, він може розіслати повідомлення про це певним (або всім) модулям.
 
-Example:
 class EventObserver {
   constructor () {
     this.observers = [];
@@ -18,8 +17,6 @@ class EventObserver {
     this.observers.forEach(subscriber => subscriber(data));
   }
 }
-
-Usage:
 
 const observer = new EventObserver();
 
